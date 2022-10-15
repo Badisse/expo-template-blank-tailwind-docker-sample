@@ -1,10 +1,10 @@
 version: '3.8'
 
 services:
-  deliveroo:
-    build: ./deliveroo
+  expo:
+    build: ./expo
     volumes:
-      - ./deliveroo:/usr/src/app
+      - ./expo:/usr/src/app
     environment:
       - EXPO_DEVTOOLS_LISTEN_ADDRESS=${EXPO_DEVTOOLS_LISTEN_ADDRESS}
       - REACT_NATIVE_PACKAGER_HOSTNAME=${REACT_NATIVE_PACKAGER_HOSTNAME}
